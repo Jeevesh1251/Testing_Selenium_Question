@@ -1,0 +1,230 @@
+1.Roles and Responsibilities
+~~Responsibilities:-
+To read all the documents and understand what needs to be tested.
+Based on the information procured in the above step decide how it is to be tested.
+Inform the test lead about what all resources will be required for software testing.
+Develop test cases and prioritize testing activities.
+Execute all the test case and report defects, define severity and priority for each defect.
+Carry out regression testing every time when changes are made to the code to fix defects.
+
+~~Role:-
+Creation of test designs, test processes, test cases and test data.
+Carry out testing as per the defined procedures.
+Participate in walkthroughs of testing procedures.
+Prepare all reports related to software testing carried out.
+Ensure that all tested related work is carried out as per the defined standards and procedures
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2.Difference between test cases/test scenarios/test strategy/test plan
+~~Test Cases:-
+A test case is a defined format for software testing required to check if a particular application/software is working or not. A test case consists of a 
+certain set of conditions that need to be checked to test an application or software i.e. in more simple terms
+when conditions are checked it checks if the resultant output meets with the expected output or not. A test case consists of various parameters 
+such as Id, condition, steps, input, expected result,Actual result, status, and remarks.
+
+~~Test scenarios:-
+The test scenario is a detailed document of test cases that cover end to end functionality of a software application in liner statements. The liner 
+statement is considered as a scenario. The test scenario is a high-level classification of testable requirements. These requirements are grouped on the 
+basis of the functionality of a module and obtained from the use cases.
+
+~~Test Strategy:-
+A Test Strategy is a plan that defines the testing approach and provides answers to questions such as what is to be accomplished and how it will be 
+accomplished. It is the most critical document for every QA team in software testing, and every tester gains the ability to write it successfully via 
+experience.
+
+~~Test Plan
+A test plan is a detailed document which describes software testing areas and activities. It outlines the test strategy, objectives, test schedule, 
+required resources (human resources, software, and hardware), test estimation and test deliverables.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+3.Difference between regression and retesting
+Regression testing is to ensure that changes have not affected the unchanged part of product. Retesting is used to ensure the test cases which failed in 
+last execution are fixed. Regression testing is used for passed test cases. Retesting is used only for failed test cases
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+4.What is test validation
+Test validation is the process of verifying whether the specific requirements to test development stages are fulfilled or not, based on solid evidence. 
+In particular, test validation is an ongoing process of developing an argument that a specific test, its score interpretation or use is valid
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------
+|5.Analyse test cases for one real time scenario - based on input details button should get enabled or disabled|
+----------------------------------------------------------------------------------------------------------------
+
+
+What is Unit Testing and who perform the Unit Testing?
+Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually scrutinized for 
+proper operation.Unit testing is typically performed by developers.
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+How you will ensure that Dev. team has performed the Unit testing?
+We will ensure about Unit testing, Developer have to provide/Ateechements regarding the story/task
+-------------------------------------------------------------------------------------------------------------------------------------
+
+What is Regression Testing?
+Regression Testing is a type of testing in the software development cycle that runs after every change to ensure that the change introduces no unintended 
+breaks.
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+What is Adhoc Testing?
+Adhoc testing is a type of software testing which is performed informally and randomly after the formal testing is completed to find out any loophole in 
+the system. It is also known as Monkey testing and random testing
+
+What is Mutation Testing?
+Mutation testing, also known as code mutation testing, is a form of white box testing in which testers change specific components of an application's 
+source code to ensure a software test suite can detect the changes.
+
+
+What is System Testing?
+System testing is defined as testing of a complete and fully integrated software product. This testing falls in black-box testing.
+
+
+What is Exploratory Testing?
+
+What is Black Box Testing?
+
+What is White Box Testing?
+
+What is Integration Testing?
+
+What is Acceptance Testing?
+-Acceptance testing is a quality assurance (QA) process that determines to what degree an application meets end users' approval
+
+What is the difference between Function and Non Functional Testing?
+
+What is Bug Life Cycle?
+-The bug life cycle in testing refers to a cycle of defects in which it goes through different states throughout its life.
+
+What is the difference between Bug, Error and Defect?
+
+What is Equivalence Partitioning?
+-Equivalence partitioning is a method of dividing up your tests into sections with similar values and then performing a test on each section
+
+What is Boundary Value Analysis
+
+Difference between Equivalence Partitioning and Boundary Value Analysis?
+
+What is Test Case ?
+
+Tell the Test Case Format?
+
+Tell me about Priority? Tell me the example?
+
+Tell me about Severity? Tell me the example?
+
+Tell me the example of Higher Priority and Lower Severity?
+
+Tell me the example of Lower Priority and Higher Severity?
+
+Why QA perform the Testing, Any reason for that?
+
+What is Agile?
+
+What is Agile Mythology?
+
+What is STLC?
+
+What is SDLC?
+
+What is V Model
+
+What is Test Plan
+
+How many browsers run in the market nowadays?
+
+What is the Windows Version running nowadays?
+
+What is Test Cycle Closure?
+
+When Test stop the testing
+
+What is Entry and Exit Criteria?
+
+Tell me the TC's for a Chair?
+1.weight capability 
+2.comfort test
+3.material quality 
+4.safety test
+balance test 
+armrest test
+noise test
+environmental test
+
+
+Tell me the TC's for a ATM Machine?
+
+Tell me the TC's for a Login Screen of any Application?
+
+Tell me the Test Scenarios for the Amazon Application?
+
+What is Bug Leakage and Bug Release?
+
+
+Interface class- In java, an interface is a blueprint for a class. It defines the set of the abstract method that must be implemented by any class that implements the interface.
+interface are declared by the 'interface' keyword.
+ex- interface define{
+	void sample();  // this an abstract method 
+	}
+
+in above example the 'define' interface declares a single abstract mathod sample(). any class that implements this interface must provide an implemenetation for the sample() method 
+
+
+below, how a class can implement the 'define' interface:
+
+
+class Circle implements define {
+public void sample(){
+
+sysout("This is a example of interface");
+}
+}
+
+Abstract class - Abstract class is a restricted class that cannot be used to create objects(to access it, it must be inherited from another class).abstract class areusing 'abstract' keyword
+they can contain both abstract(unimplemented) method and (implemented) methods.abstract method- it can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+example:- abstract class shape{
+	  public abtract double area();
+	  public void displayInfo(){
+		sysout("this is a shape");
+		}
+	  }
+in the example above. 'shape' is an abstract class with an abstract method 'area()' and a concrete method 'displayInfo()'. 
+
+example for subclass that extends the abstract class shape:
+class circle extends shape{
+private double radius;
+public Circle (double radius ){
+this.radius = radius;
+}
+
+public double area (){
+return Math.PI*radius*radius:
+}
+}
+
+
+==============================================================================================================================================================
+
+1.What is Selenium?
+2.What are the Selenium suite components?
+3.Mention the advantages of using Selenium as an automation tool.
+4.What is test automation or automation testing?
+5.What are the advantages of automation testing?
+6.What is Selenese? How is it classified?
+7.What are the limitations of Selenium testing? 
+8.What is the difference between Selenium 2.0 and Selenium 3.0? 
+9.What are the testing types supported by Selenium? 
+10.What are the different types of annotations which are used in Selenium?
+
+
+
+
+
+
+
+
+
