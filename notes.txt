@@ -222,7 +222,13 @@ return Math.PI*radius*radius:
 
 
 
-
+SELECT 
+    EMPLOYEE_ID AS "Emp #", 
+    LAST_NAME AS "Employee", 
+    JOB_ID AS "Job", 
+    TO_CHAR(HIRE_DATE, 'DD-MON-YY') AS "Hire Date"
+FROM EMPLOYEES
+WHERE EMPLOYEE_ID IN (100, 101, 102, 103, 104, 107, 124, 141, 142, 143, 144);
 
 
 
