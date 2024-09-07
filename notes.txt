@@ -234,3 +234,33 @@ WHERE EMPLOYEE_ID IN (100, 101, 102, 103, 104, 107, 124, 141, 142, 143, 144);
 
 
 
+create table DEMO as select * from EMPLOYEES;
+
+insert into DEMO select * from EMPLOYEES where DEPARTMENT_ID IN(10,30,50,80,90);
+
+Desc DEMO;
+
+select * from DEMO;
+
+select EMPLOYEE_ID as "Employee Number", LAST_NAME as "Last Name",JOB_ID as "Job Code",HIRE_DATE as "Strat Date" from EMPLOYEES;
+
+select distinct JOB_ID from EMPLOYEES;
+
+SELECT 
+    EMPLOYEE_ID AS "Emp #", 
+    LAST_NAME AS "Employee", 
+    JOB_ID AS "Job", 
+    TO_CHAR(HIRE_DATE, 'DD-MON-YY') AS "Hire Date"
+FROM EMPLOYEES
+WHERE EMPLOYEE_ID IN (100, 101, 102, 103, 104, 107, 124, 141, 142, 143, 144);
+
+select LAST_NAME || ' , '||JOB_ID as "Employee and Title" from EMPLOYEES;
+
+select EMPLOYEE_ID || ' , ' || FIRST_NAME || ' , ' || LAST_NAME|| ' , ' || EMAIL || ' , ' || PHONE_NUMBER || ' , ' || JOB_ID || ' , ' || TO_CHAR(HIRE_DATE , 'DD_MON_YY') || ' , ' || SALARY 
+|| ' , ' || COMMISSION_PCT || ' , ' || MANAGER_ID || ' , ' || DEPARTMENT_ID as "THE_OUTPUT" from EMPLOYEES;
+
+
+
+
+
+
